@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import HomeNavbar from "./components/home-navbar/HomeNavbar";
 
 const Home = () => {
   return (
-    <div className="text-green-600 font-bold ml-2 mt-7 text-4xl">Home</div>
-  )
-}
+    <>
+      <div className="home m-10 grid gap-5">
+        <div className="text-customGray font-medium text-4xl">Home</div>
+        <HomeNavbar />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;

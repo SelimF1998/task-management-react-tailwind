@@ -1,26 +1,26 @@
 import React from "react";
-import ChatIcon from "@mui/icons-material/Chat";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import HelpIcon from "@mui/icons-material/Help";
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import Avatar from "../../ui/avatars/avatar";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between h-16 items-center justify-center ml-4 mr-4">
+    <div className="flex justify-between h-16 items-center ml-4 mr-4">
       <input
         type="text"
         placeholder="Search"
-        className="input w-full max-w-xs bg-slate-800"
+        className="input w-full max-w-xs bg-inputsInside text-white"
       />
       <div className="flex gap-4">
         <div className="text-gray-300 cursor-pointer">
-          <ChatIcon sx={{ fontSize: 25 }} />
+          <ChatOutlinedIcon sx={{ fontSize: 25 }} />
         </div>
         <div className="text-gray-300 cursor-pointer">
-          <NotificationsIcon sx={{ fontSize: 25 }} />
+          <NotificationsNoneOutlinedIcon sx={{ fontSize: 25 }} />
         </div>
         <div className="text-gray-300 cursor-pointer">
-          <HelpIcon sx={{ fontSize: 25 }} />
+          <HelpOutlineOutlinedIcon sx={{ fontSize: 25 }} />
         </div>
         <Avatar />
       </div>
